@@ -6307,6 +6307,10 @@ section[id]{
 .solution-card,.talent-card{display:flex;flex-direction:column}
 .solution-card .context-link{margin-top:auto}
 .talent-card .talent-proof{margin-top:auto}
+/* keep contact line on one line (e.g. "London, United Kingdom") */
+.contact-row .contact-item span:last-child{white-space:nowrap}
+.contact-row{flex-wrap:nowrap}
+@media(max-width:520px){.contact-row{flex-wrap:wrap}}
 /* focus states */
 a:focus-visible,button:focus-visible,.btn:focus-visible,.nav-cta:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 </style>
